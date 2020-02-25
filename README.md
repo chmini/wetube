@@ -19,5 +19,6 @@ app.get('/', function (req, res) {
 })
 ```
 
-Link: [ ExpressJS ][expresslink]
+Link: [ExpressJS][expresslink]
+
 [expresslink]: https://expressjs.com/ "To ExpressJS"
