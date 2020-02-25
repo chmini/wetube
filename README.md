@@ -25,10 +25,13 @@ Link : [ExpressJS Offcial Site][expresslink]
 
 ## Routing
 
-GET, POST
+GET, POST Method & request and response object
 
-request and response object
+```
+app.get(req, res);
+app.post(req, res);
+```
 
-1. who request page
-2. what data sended to page
-   => **Use Request Object**
+**Use Request Object**
+who request page
+what data sended to page
