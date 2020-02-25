@@ -22,3 +22,15 @@ app.get('/', function (req, res) {
 Link : [ExpressJS Offcial Site][expresslink]
 
 [expresslink]: https://expressjs.com/ "To ExpressJS"
+
+## Routing
+
+```
+GET, POST
+
+request and response object
+
+1. who request page
+2. what data sended to page
+=> **Use Request Object**
+```
