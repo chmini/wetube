@@ -7,3 +7,14 @@
 ```
 npm install express
 ```
+
+Example Code
+
+```
+const express = require('express')
+const app = express()
+
+app.get('/', function (req, res) {
+  res.send('hello world')
+})
+```
