@@ -36,3 +36,24 @@ app.post(req, res);
 
 - who request page
 - what data sended to page
+
+## Babel
+
+Babel is compiler that converts es5+ script to old version javascript code
+
+```
+"presets": ["@babel/preset-env"]
+```
+
+### ES6
+
+#### arrow function
+```
+const sayHello = () => console.log("hello");
+```
+#### use babel to convert
+```
+function sayHello() {
+  console.log("hello");
+}
+```
