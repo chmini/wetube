@@ -72,3 +72,7 @@ It has the power that kill connection
 - helmet : it helps secure Express app by setting various HTTP headers.
 - body-parser
 - cookie-parser
+
+## Routing
+
+Routing refers to how an application’s endpoints (URIs) respond to client requests.
