@@ -79,8 +79,6 @@ Routing refers to how an application’s endpoints (URIs) respond to client requ
 
 ## MVC Pattern
 
-<h3> 
-Model - Data <br>
-View - how does the data look <br>
-Controller - function that looks for the data
-</h3>
+Model : Data <br>
+View : how does the data look <br>
+Controller : function that looks for the data
