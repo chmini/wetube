@@ -66,12 +66,20 @@ function sayHello() {
 Middleware is something that connected to the end of processing<br>
 It has the power that kill connection
 
+```
+app.use([function]);
+```
+
 ### Express Middleware
 
 - Morgan : HTTP request logger middleware for node.js
 - helmet : it helps secure Express app by setting various HTTP headers.
 - body-parser
 - cookie-parser
+
+```
+app.use(morgan("dev"));
+```
 
 ## Routing
 
