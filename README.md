@@ -48,12 +48,27 @@ Babel is compiler that converts es5+ script to old version javascript code
 ### ES6
 
 #### arrow function
+
 ```
 const sayHello = () => console.log("hello");
 ```
+
 #### use babel to convert
+
 ```
 function sayHello() {
   console.log("hello");
 }
 ```
+
+## Middleware
+
+Middleware is something that connected to the end of processing<br>
+It has the power that kill connection
+
+### Express Middleware
+
+- Morgan : HTTP request logger middleware for node.js
+- helmet : it helps secure Express app by setting various HTTP headers.
+- body-parser
+- cookie-parser
