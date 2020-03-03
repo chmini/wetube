@@ -134,3 +134,9 @@ res.locals.[variable name] = [you want to save it]
 ```
 
 #### 2. Templates
+
+If you render page, you can send a variable(object) to page
+
+```
+res.render("[page]", { [variable] })
+```
