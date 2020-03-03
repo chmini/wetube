@@ -122,3 +122,15 @@ Partial is piece of HTML code that i can reuse on pug
 ```
 includes [partial]
 ```
+
+### Variables in Pug
+
+#### 1. Locals
+
+It can be use all pugs
+
+```
+res.locals.[variable name] = [you want to save it]
+```
+
+#### 2. Templates
