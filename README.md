@@ -99,6 +99,12 @@ Pug is NodeJS Express Template Engine
 app.set("view engine", "pug");
 ```
 
-### layout
+### Layout
 
 Layout is the basis of all the files.
+
+How to Use Layout
+
+```
+extends [layout]
+```
