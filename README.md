@@ -101,8 +101,24 @@ app.set("view engine", "pug");
 
 ### Layout
 
-Layout is the basis of all the files.
+Layout is template that basis of all pug files and extending from them.
 
 ```
 extends [layout]
+```
+
+### Block
+
+Block is a way of making space for dynamic content inside of a template
+
+```
+block [name]
+```
+
+### Partial
+
+Partial is piece of HTML code that i can reuse on pug
+
+```
+includes [partial]
 ```
