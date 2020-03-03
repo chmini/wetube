@@ -103,8 +103,6 @@ app.set("view engine", "pug");
 
 Layout is the basis of all the files.
 
-How to Use Layout
-
 ```
 extends [layout]
 ```
