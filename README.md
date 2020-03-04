@@ -140,3 +140,29 @@ If you render page, you can send a variable(object) to page
 ```
 res.render("[page]", { [variable] })
 ```
+
+## Set View and Controller
+
+Insert info or data in controller into the each appropriate view  
+If the controller knows what the user has requested, the method must be **get**;
+
+### Search
+
+#### pug
+
+```
+form(action=[you want] method="get")
+  input(type="text", name=[name])
+```
+
+#
+
+#### controller
+
+get by name
+
+```
+const {
+  query: [name]
+} = req;
+```
