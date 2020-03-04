@@ -73,7 +73,7 @@ app.use([function]);
 ### Express Middleware
 
 - Morgan : HTTP request logger middleware for node.js
-- helmet : it helps secure Express app by setting various HTTP headers.
+- helmet : it helps secure Express app by setting various HTTP headers
 - body-parser
 - cookie-parser
 
@@ -83,7 +83,8 @@ app.use(morgan("dev"));
 
 ## Routing
 
-Routing refers to how an application’s endpoints (URIs) respond to client requests.
+Routing refers to how an application’s endpoints (URIs) respond to client requests
+Router is in charge of mapping URLS with Controller Functions
 
 ## MVC Pattern
 
@@ -187,3 +188,7 @@ const {
 
 **Login** and **join** require **post method**, so the controller needs post routes.
 **get method** sends the data of the form on the url and **post method** sends it hidden from the user
+
+### Controller
+
+Controller's job is to get data and render the page
