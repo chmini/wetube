@@ -212,3 +212,13 @@ MongoDB is a Non SQL Database
 Link : [Install MongoDB in WSL][mongodb]
 
 [mongodb]: https://github.com/michaeltreat/Windows-Subsystem-For-Linux-Setup-Guide/blob/master/readmes/installs/MongoDB.md
+
+## Mongoose
+
+Mongoose is how we talk to the database using JS
+
+```
+npm install mongoose
+```
+
+## dotenv
