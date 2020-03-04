@@ -2,6 +2,19 @@
 
 ### Cloning YouTube with Vanilla and Node JS
 
+## Pages
+
+- [ ] Home
+- [ ] Join
+- [ ] Login
+- [x] Search
+- [ ] User Detail
+- [ ] Edit Profile
+- [ ] Change Password
+- [ ] Upload
+- [ ] Video Detail
+- [ ] Edit Video
+
 ## install Express
 
 ```
@@ -10,13 +23,13 @@ npm install express
 
 Example Code
 
-```
-const express = require('express')
-const app = express()
+```javascript
+const express = require("express");
+const app = express();
 
-app.get('/', function (req, res) {
-  res.send('hello world')
-})
+app.get("/", function(req, res) {
+  res.send("hello world");
+});
 ```
 
 Link : [ExpressJS Offcial Site][expresslink]
@@ -27,7 +40,7 @@ Link : [ExpressJS Offcial Site][expresslink]
 
 GET, POST Method & request and response object
 
-```
+```javascript
 app.get(req, res);
 app.post(req, res);
 ```
@@ -41,7 +54,7 @@ app.post(req, res);
 
 Babel is compiler that converts es5+ script to old version javascript code
 
-```
+```json
 "presets": ["@babel/preset-env"]
 ```
 
@@ -49,13 +62,13 @@ Babel is compiler that converts es5+ script to old version javascript code
 
 #### arrow function
 
-```
+```javascript
 const sayHello = () => console.log("hello");
 ```
 
 #### use babel to convert
 
-```
+```javascript
 function sayHello() {
   console.log("hello");
 }
@@ -66,7 +79,7 @@ function sayHello() {
 Middleware is something that connected to the end of processing<br>
 It has the power that kill connection
 
-```
+```javascript
 app.use([function]);
 ```
 
@@ -77,7 +90,7 @@ app.use([function]);
 - body-parser
 - cookie-parser
 
-```
+```javascript
 app.use(morgan("dev"));
 ```
 
@@ -95,7 +108,7 @@ Controller : function that looks for the data
 
 Pug is NodeJS Express Template Engine
 
-```
+```javascript
 app.set("view engine", "pug");
 ```
 
@@ -103,7 +116,7 @@ app.set("view engine", "pug");
 
 Layout is template that basis of all pug files and extending from them.
 
-```
+```pug
 extends [layout]
 ```
 
@@ -111,7 +124,7 @@ extends [layout]
 
 Block is a way of making space for dynamic content inside of a template
 
-```
+```pug
 block [name]
 ```
 
@@ -119,7 +132,7 @@ block [name]
 
 Partial is piece of HTML code that i can reuse on pug
 
-```
+```pug
 includes [partial]
 ```
 
@@ -129,7 +142,7 @@ includes [partial]
 
 It can be use all pugs
 
-```
+```javascript
 res.locals.[variable name] = [you want to save it]
 ```
 
@@ -137,32 +150,28 @@ res.locals.[variable name] = [you want to save it]
 
 If you render page, you can send a variable(object) to page
 
-```
-res.render("[page]", { [variable] })
+```javascript
+res.render([page], { [variable] })
 ```
 
-## Set View and Controller
+## View and Controller
 
 Insert info or data in controller into the each appropriate view  
 If the controller knows what the user has requested, the method must be **get**;
 
-### Search
+### Pug file
 
-#### pug
-
-```
+```pug
 form(action=[you want] method="get")
   input(type="text", name=[name])
 ```
 
-#
+### js file
 
-#### controller
-
-get by name
-
-```
+```javascript
 const {
   query: [name]
 } = req;
 ```
+
+**Login** and **join** require **post method**, so the controller needs post routes.
