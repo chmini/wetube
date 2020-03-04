@@ -120,7 +120,18 @@ block [name]
 Partial is piece of HTML code that i can reuse on pug
 
 ```pug
-includes [partial]
+include [partial]
+```
+
+### Mixin
+
+Mixins are useful when I want to reuse some HTML block that has same structure but different data
+this is kind of pug function
+
+```pug
+mixin function(args = {})
+
+include [mixin]
 ```
 
 ### Variables in Pug
@@ -143,7 +154,7 @@ res.render([page], { [variable] })
 
 # Pages
 
-- [ ] Home
+- [x] Home
 - [x] Join
 - [x] Login
 - [x] Search
@@ -175,3 +186,4 @@ const {
 ```
 
 **Login** and **join** require **post method**, so the controller needs post routes.
+**get method** sends the data of the form on the url and **post method** sends it hidden from the user
