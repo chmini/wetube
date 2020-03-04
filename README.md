@@ -205,8 +205,11 @@ MongoDB is a Non SQL Database
 5. sudo apt-get install -y mongodb-org
 6. cd ~
 7. sudo mkdir -p data/db
-8. sudo mongod --dbpath ~/data/db
-9. mongo
+```
+
+```
+sudo mongod --dbpath ~/data/db
+mongo
 ```
 
 Link : [Install MongoDB in WSL][mongodb]
@@ -222,3 +225,7 @@ npm install mongoose
 ```
 
 ## dotenv
+
+Why we need dotenv?
+
+**To be able to hide strings from the version control systems**
