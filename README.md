@@ -192,3 +192,23 @@ const {
 ### Controller
 
 Controller's job is to get data and render the page
+
+## MongoDB
+
+MongoDB is a Non SQL Database
+
+```
+1. cd ~
+2. sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+3. echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
+4. sudo apt-get update
+5. sudo apt-get install -y mongodb-org
+6. cd ~
+7. sudo mkdir -p data/db
+8. sudo mongod --dbpath ~/data/db
+9. mongo
+```
+
+Link : [Install MongoDB in WSL][mongodb]
+
+[mongodb]: https://github.com/michaeltreat/Windows-Subsystem-For-Linux-Setup-Guide/blob/master/readmes/installs/MongoDB.md
