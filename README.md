@@ -14,7 +14,7 @@ Example Code
 const express = require("express");
 const app = express();
 
-app.get("/", function(req, res) {
+app.get("/", (req, res) => {
   res.send("hello world");
 });
 ```
@@ -216,7 +216,7 @@ Link : [Install MongoDB in WSL][mongodb]
 
 [mongodb]: https://github.com/michaeltreat/Windows-Subsystem-For-Linux-Setup-Guide/blob/master/readmes/installs/MongoDB.md
 
-## Mongoose
+### Mongoose
 
 Mongoose is how we talk to the database using JS
 
@@ -224,8 +224,12 @@ Mongoose is how we talk to the database using JS
 npm install mongoose
 ```
 
-## dotenv
+### dotenv
 
 Why we need dotenv?
 
 **To be able to hide strings from the version control systems**
+
+### Schema
+
+### Model
