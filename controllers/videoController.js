@@ -15,6 +15,7 @@ export const search = async (req, res) => {
   const {
     query: { term: searchBy }
   } = req;
+  console.log(searchBy);
   let videos = [];
   try {
     videos = await Video.find({ title: { $regex: searchBy, $options: "i" } });
@@ -84,6 +85,7 @@ export const deleteVideo = async (req, res) => {
   const {
     params: { id }
   } = req;
+  console.log(id);
   try {
     await Video.findOneAndRemove({ _id: id });
   } catch (error) {
