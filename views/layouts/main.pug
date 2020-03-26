@@ -2,6 +2,7 @@ doctype html
 html
     head
         link(rel="stylesheet", href="/static/styles.css")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.9.0/css/all.css")
         title #{pageTitle} | #{siteName}
     body
         include ../partials/header
@@ -9,4 +10,3 @@ html
             block content
         include ../partials/footer
         script(src="/static/main.js")
-        script(src="https://kit.fontawesome.com/70b6710882.js" crossorigin="anonymous") 
