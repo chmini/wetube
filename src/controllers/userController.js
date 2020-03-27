@@ -22,7 +22,7 @@ export const postJoin = async (req, res, next) => {
       User.register(user, password);
       next();
     } catch (error) {
-      console.log(error);
+      res.status(400);
       res.redirect(routes.home);
     }
   }
@@ -34,10 +34,15 @@ export const getLogin = (req, res) => {
 
 export const postLogin = passport.authenticate("local", {
   failureRedirect: routes.login,
-  successRedirect: routes.home
+  successRedirect: routes.home,
+  successFlash: "Welcome!",
+  failureFlash: "Can't login. Check email and/or password"
 });
 
-export const githubLogin = passport.authenticate("github");
+export const githubLogin = passport.authenticate("github", {
+  successFlash: "Welcome!",
+  failureFlash: "Can't login at this time"
+});
 
 export const githubLoginCallback = async (_, __, profile, cb) => {
   const {
