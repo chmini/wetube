@@ -1,7 +1,7 @@
 extends layouts/main
 
 block content
-    .video-detail__container
+    .video-detail__container#jsVideoContainer
         video(src=video.fileUrl, controls=true)
         .video__info
             if loggedUser && video.creator.id === loggedUser.id

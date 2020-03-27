@@ -117,7 +117,6 @@ export const registerView = async (req, res) => {
     res.status(200);
   } catch (error) {
     res.status(400);
-    res.end();
   } finally {
     res.end();
   }
